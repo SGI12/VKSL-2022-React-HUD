@@ -36,7 +36,7 @@ export default class PlayerBox extends React.Component<IProps> {
             </div>
           </div>
           <div className="player_stats">
-            <div className="row">
+            <div className="row row-top">
               <div className="health">
                 {player.state.health}
               </div>

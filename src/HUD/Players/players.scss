@@ -22,6 +22,12 @@
         left: 10px;
         .player {
             .row {
+                
+                &-top {
+                    background-color: #315AD2;
+                    
+                }
+
                 flex-direction: row;
                 .grenades {
                     padding-right: 5px;
@@ -59,6 +65,10 @@
                     align-self: flex-end;
                 }
                 .row {
+                    &-top {
+                        background-color: #EC2350;
+                    }
+
                     flex-direction: row-reverse;
                     .grenades {
                         padding-left: 5px;
@@ -135,7 +145,7 @@
             }
         }
         &:last-child .player_data {
-            border-radius: 0 0 20px 20px;
+            // border-radius: 0 0 20px 20px;
         }
         .player_side_bar {
             width: 10px;
