@@ -1,6 +1,6 @@
-# VKSL 2022 LHM Hud 
+# VKSL 2022 LHM CS:GO Hud 
 
-This is a hud used on VKSL 2022. You can use it with LHM absolutely free. If you have some questions about functionality of this HUD, you can tag me in my social networks in profile.
+This is a hud used on CS:GO VKSL 2022. You can use it with LHM absolutely free. If you have some questions about functionality of this HUD, you can tag me in my social networks in profile.
 
 ## Setting up
 Fork this repo, clone it, and then run `npm install` and `npm start`. HUD should start on the 3500 port. For this to work have HUD Manager opened so it will pass CS:GO data to the HUD.
