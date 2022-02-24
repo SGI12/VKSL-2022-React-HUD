@@ -39,9 +39,9 @@
 		color: var(--color-new-t);
 		.round-thingy {
 			.inner {
-				background-color: #ffc600;
+				background-color: #EC2350;
 			}
-			background-color: #ffc60080;
+			background-color: #861d34;
 		}
 	}
 	#timer {
@@ -133,7 +133,7 @@
 			height: 70px;
 			align-items: center;
 			overflow: hidden;
-			background-color: var(--sub-panel-color);
+			background: linear-gradient(#120544, #6D0350);
 			img {
 				max-width: 90%;
 				max-height: 65%;
@@ -142,6 +142,7 @@
         &.left {
             justify-content: center;
             flex-direction: row-reverse;
+			//background: linear-gradient(#120544, #6D0350);
             .round-thingy {
                 left: -30px;
             }
@@ -152,6 +153,7 @@
         &.right {
             justify-content: center;
             flex-direction: row;
+			//background: linear-gradient(#120544, #6D0350);
             .round-thingy {
                 right: -30px;
             }
@@ -168,7 +170,8 @@
 		justify-content: center;
 		font-weight: 600;
 		font-size: 30px;
-		background-color: var(--sub-panel-color);
+		color: white;
+		background: linear-gradient(#120544, #6D0350);
 	}
 	.round-thingy {
 		width: 60px;
@@ -193,7 +196,8 @@
 		justify-content: center;
 		font-weight: 600;
 		font-size: 36px;
-		background-color: var(--sub-panel-color);
+		color: white;
+		background: linear-gradient(#120544, #6D0350);;
 	}
 	.bar {
 		display: flex;

@@ -7,13 +7,23 @@
     transition: opacity 0.75s;
     &.CT {
         .player .hp_bar {
+            background-color: white;
+        }
+        .row-top {
             background-color: var(--color-new-ct);
         }
     }
     &.T {
         .player .hp_bar {
+            background-color: white;
+        }
+        .row-top {
             background-color: var(--color-new-t);
         }
+    }
+
+    .hp_bar {
+        background-color: #ffffff;
     }
     &.hide {
         opacity: 0;
@@ -22,11 +32,8 @@
         left: 10px;
         .player {
             .row {
-                
-                &-top {
-                    background-color: #315AD2;
-                    
-                }
+
+            
 
                 flex-direction: row;
                 .grenades {
@@ -65,9 +72,9 @@
                     align-self: flex-end;
                 }
                 .row {
-                    &-top {
-                        background-color: #EC2350;
-                    }
+                    // &-top {
+                    //     background-color: #EC2350;
+                    // }
 
                     flex-direction: row-reverse;
                     .grenades {
@@ -112,7 +119,7 @@
             }
         }
         &.dead {
-            opacity: 0.7;
+            opacity: 0.5;
             .player_side_bar {
                 background-color: var(--main-panel-color) !important;
             }
@@ -128,7 +135,7 @@
                         opacity: 0;
                     }
                     .health {
-                        color: #b2b2b2;
+                        color: #ffffff;
                         overflow: hidden;
                     }
                     .username {
@@ -194,7 +201,7 @@
                 .hp_bar {
                     height: 2px;
                     &.low {
-                        background-color: red;
+                        background-color: white;
                     }
                 }
                 .row {

@@ -123,6 +123,8 @@
 
     .main_row {
         font-weight: 600;
+        background-color: #120544;
+        font-size: 2vh;
         .logo {
             height: 43px;
             display: flex;
@@ -187,14 +189,14 @@
         width: 140px;
         height: 140px;
         img {
-            border-radius:50%;
+            border-radius:0%;
         }
     }
     
     &.T {
         border-bottom: 6px solid var(--color-new-t);
         .main_row .username_container .username, .stats_row .ammo .ammo_counter .ammo_reserve {
-            color: var(--color-new-t)
+            color: white;
         }
         .sidebar {
             background-color: var(--color-new-t)
@@ -212,7 +214,7 @@
     &.CT {
         border-bottom: 6px solid var(--color-new-ct);
         .main_row .username_container .username, .stats_row .ammo .ammo_counter .ammo_reserve {
-            color: var(--color-new-ct)
+            color: white;
         }
         .sidebar {
             background-color: var(--color-new-ct)
@@ -227,6 +229,9 @@
             }
         }
         
+    }
+    .stats_row {
+        background-color: #6D0450;
     }
 }
 
