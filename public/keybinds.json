@@ -1,6 +1,6 @@
 [
     {
-        "bind":"Ctrl+B",
+        "bind":"Alt+N",
         "action":"toggleRadar"
     },
     {
