@@ -126,10 +126,16 @@
         background-color: #120544;
         font-size: 2vh;
         .logo {
-            height: 43px;
+            max-height: 100%;
+            max-width: 150px;
             display: flex;
-            align-items: center;
+            flex-grow: 1;
+            align-items: flex-end;
             justify-content: center;
+            img {
+                max-width: 75px;
+                width: 100%;
+            }
         }
         .grenade_container {
             height: 100%;
