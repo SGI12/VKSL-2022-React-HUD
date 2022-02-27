@@ -49,14 +49,16 @@ html, body, .map-container {
 }
 .map .player, .map .grenade, .map .bomb {
     position: absolute;
-    height:30px;
-    width:30px;
+    height:55px;
+    width:55px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity 0.5s ease;
     /*transition: all 0.1s ease;/**/
 }
+
+
 .map .player .background {
     /*background-color:white;*/
     /*clip-path: polygon(0 0, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0 0);*/
@@ -69,6 +71,7 @@ html, body, .map-container {
 .map .player.dead {
     opacity: 0.2;
     z-index: 1;
+    
 }
 .map .player:not(.dead) {
     z-index: 2;
