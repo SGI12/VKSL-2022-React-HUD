@@ -95,6 +95,7 @@ export default class Observed extends React.Component<{ player: Player | null, v
 						</div>
 					</div>
 				</div>
+			
 			</div>
 		);
 	}

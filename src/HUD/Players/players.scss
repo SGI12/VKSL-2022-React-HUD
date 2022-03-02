@@ -201,7 +201,10 @@
                 .hp_bar {
                     height: 5px;
                     &.low {
-                        background-color: rgb(241, 137, 0);
+                        background-color: rgb(241, 0, 0);
+                    }
+                    &.medium {
+                        background-color: #d3ae0b;
                     }
                 }
                 .row {
