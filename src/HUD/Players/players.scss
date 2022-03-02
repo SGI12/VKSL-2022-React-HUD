@@ -7,7 +7,7 @@
     transition: opacity 0.75s;
     &.CT {
         .player .hp_bar {
-            background-color: white;
+            background-color: rgb(72, 214, 72);
         }
         .row-top {
             background-color: var(--color-new-ct);
@@ -15,7 +15,7 @@
     }
     &.T {
         .player .hp_bar {
-            background-color: white;
+            background-color: rgb(72, 214, 72);
         }
         .row-top {
             background-color: var(--color-new-t);
@@ -199,9 +199,9 @@
                 flex: 1;
                 min-width: 0;
                 .hp_bar {
-                    height: 2px;
+                    height: 5px;
                     &.low {
-                        background-color: white;
+                        background-color: rgb(241, 137, 0);
                     }
                 }
                 .row {

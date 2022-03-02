@@ -49,8 +49,8 @@ html, body, .map-container {
 }
 .map .player, .map .grenade, .map .bomb {
     position: absolute;
-    height:55px;
-    width:55px;
+    height:50px;
+    width:50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,6 @@ html, body, .map-container {
 .map .player.dead {
     opacity: 0.2;
     z-index: 1;
-    
 }
 .map .player:not(.dead) {
     z-index: 2;
@@ -184,7 +183,7 @@ html, body, .map-container {
     animation: BombDefused 2s 1 forwards;
 }
 .map .player.CT .label {
-    background: radial-gradient(rgb(61, 141, 224), rgb(42, 49, 119));
+    background: radial-gradient(rgb(61, 141, 224), var(--color-new-ct));
 }
 .map .player.T .label {
     background: radial-gradient(rgb(255, 129, 0), var(--color-new-t));

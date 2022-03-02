@@ -19,7 +19,7 @@
 #matchbar {
 	display: flex;
 	flex-direction: row;
-	position: fixed;
+	position: relative;
 	justify-content: center;
 	width: 1148px;
 	height: 70px;
@@ -28,7 +28,8 @@
 	transform: translateX(-50%);
 	.CT {
 		color: var(--color-new-ct);
-		.round-thingy {
+		.round-thingy 
+		{	display: none;
 			.inner {
 				background-color: #28abff;
 			}
@@ -38,6 +39,7 @@
 	.T {
 		color: var(--color-new-t);
 		.round-thingy {
+			display: none;
 			.inner {
 				background-color: #ec0839;
 			}
@@ -54,7 +56,7 @@
 		margin-left: 8px;
 		margin-right: 8px;
 		background-color: var(--sub-panel-color);
-        top: -10px;
+        top: 0px;
         &.no-bo {
             height: 87px;
         }
@@ -198,6 +200,7 @@
 		font-weight: 600;
 		font-size: 36px;
 		color: white;
+		position: relative;
 		background: linear-gradient(#120544, #6D0350);;
 	}
 	.bar {
@@ -287,9 +290,9 @@
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
-	position: fixed;
+	position: absolute;
 	justify-content: center;
-	top: 80px;
+	top: 15px;
 	width: 1148px;
 	height: 50px;
 	left: 50%;
@@ -334,25 +337,30 @@
 	justify-content: center;
 	font-size: 12px;
 	font-weight: bold;
+	position: relative;
+	top: -10px;
 	color: var(--white-full);
 }
 .container {
 	display: flex;
-	flex-direction: row;
-	width: 511px;
+	position: absolute;
+	flex-direction: row-reverse;
+	width: 175px;
 	height: 100%;
+	top:0px;
 }
 .container.left {
 	justify-content: flex-end;
 }
 .container.right {
 	justify-content: flex-start;
+	padding-left: 50px;
 }
 .series_wins {
 	display: flex;
 	flex-direction: row;
-	width: 400px;
-	height: 30px;
+	width: 30px;
+	height: 400px;
 	z-index: 1;
 	padding-left: 6px;
 	padding-right: 6px;
@@ -369,18 +377,27 @@
 	height: 100%;
 	align-items: flex-start;
 	justify-content: flex-start;
+	position: absolute;
+	
 }
 .series_wins.left {
 	.wins_box_container {
-		flex-direction: row-reverse;
+		flex-direction: column;
+	}
+}
+
+.series_wins.right {
+	.wins_box_container {
+		flex-direction: column;
 	}
 }
 .wins_box {
-	width: 77px;
-	height: 7px;
+	width: 7px;
+	height: 15px;
 	margin-left: 2px;
 	margin-right: 2px;
 	box-sizing: border-box;
+	margin: 2px 0 2px 0;
 }
 .wins_box.CT {
 	background-color: rgba(0,0,0,0.6);
